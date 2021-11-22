@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardrllayout"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/rllayout">
+    <!--android:textStyle="bold|italic"   :- this enables multiple text styling |(pipe) -->
+<ImageView
+    android:id="@+id/imgbookimg"
+    android:layout_width="120dp"
+    android:layout_height="130dp"
+    android:layout_margin="7dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/androidplaceholder"
+
+    />
+    <TextView
+        android:id="@+id/txtRecyclerRowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/imgbookimg"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:text="List Item" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRating"
+        android:layout_toRightOf="@id/txtRecyclerRowItem"
+      android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="4.3"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/txtauthname"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the Author"
+        android:layout_below="@id/txtRecyclerRowItem"
+        android:layout_toRightOf="@id/imgbookimg"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/txtbookcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtauthname"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/imgbookimg"
+        android:text="RS.299"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
